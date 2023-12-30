@@ -1,0 +1,18 @@
+{
+  "work experience": {
+    "textron": ["bullet 1", "bullet 2", "bullet 3"],
+    "pwc": ["bullet 1", "bullet 2", "bullet 3"]
+  },
+  "education": {
+    "clemson": ["bullet 1", "bullet 2", "bullet 3"],
+    "cba": ["bullet 1", "bullet 2", "bullet 3"]
+  },
+  "awards & accolades": {
+    "nothing": ["bullet 1", "bullet 2", "bullet 3"],
+    "never being recognized": ["bullet 1", "bullet 2", "bullet 3"]
+  },
+  "skills & hobbies": {
+    "being literally useless": ["bullet 1", "bullet 2", "bullet 3"],
+    "not knowing how to code": ["bullet 1", "bullet 2", "bullet 3"]
+  }
+}
