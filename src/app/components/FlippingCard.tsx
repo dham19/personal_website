@@ -1,13 +1,11 @@
 "use client";
 // TODO:
 // make expanded and contracted boxes dynamic widths, not fixed pixels
-// downloadable CV
-// Make Work experience and education dynamic
+// Work experience: if no bullets, make if statement in JSX to render it so title is to the right and centered
 
 import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Navbar from "./Navbar";
 
 export default function FlippingCard() {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -32,37 +30,102 @@ export default function FlippingCard() {
   const work_experience = [
     // Job 1
     [
+      ["/pwc.png"],
+      ["PwC"],
+      ["General Tax Intern"],
+      ["Charlotte, NC"],
+      ["Summer 2023"],
+      [
+        "Analyzed and updated client and internal files, enabling our team to confirm the accuracy of client financial statements through my quarterly reviews, year-to-date and AETR analyses, and quarterly tie-outs.",
+        "Created new networks with interns, associates, managers, and partners inside and outside my specific team, including ITP, Core tax, international tax, transfer pricing, and audit team members.",
+        "Analyzed and prepared final 2022 tax returns for multiple clients, including adjusting temporary and permanent book-tax differences.",
+        "Experimented and created robots with new technology such as UiPath, Alteryx, and PowerBI",
+      ],
+    ],
+    // Job 2...
+    [
       ["/textron.png"],
       ["Textron"],
       ["M&A Tax Intern"],
       ["Providence, RI"],
       ["Summer 2022"],
       [
-        "Conducted comprehensive financial data analysis, identifying discrepancies and proposing corrective measures, contributing to a 15% reduction in accounting errors within the audit department",
-        "Collaborated with cross-functional teams to streamline audit processes, resulting in the implementation of new software tools, improving operational efficiency by 20%",
-        "Assisted in the preparation of audit reports and presentations for senior management, effectively communicating complex financial findings and recommendations for process enhancements.",
+        "Worked at global headquarters on multiple projects, including LIFO calculation, reviewing CFC balance sheets to determine the potential for cash repatriation, and preparing statements for Textron’s federal returns.",
+        "Led nationwide team to first place at intern conference with a project on Bell APT 70 Government and commercial supply and demand analysis.",
+        "Engaged with senior leadership to explore personal goals, M&A, and tax law concepts",
       ],
     ],
-    // Job 2...
+    [
+      ["/lulu.png"],
+      ["Lululemon"],
+      ["Educator"],
+      ["Clemson, SC"],
+      ["Fall 2023"],
+      [],
+    ],
+
     [
       ["/nps.png"],
       ["National Park Service"],
-      ["Surf Lifeguard"],
-      ["Sandy Hook National Park, NJ"],
+      ["Ocean Lifeguard"],
+      ["Sandy Hook, NJ"],
       ["Summer 2021"],
       [
-        "Performed 20+ ocean rescues and enforced safety protocols with ~ 60 guard team at Gateway National Recreation Area, a top tourist destination of the NJ shore attracting up to 30,000 visitors a day with upwards of 700 rescues a season",
-        "CPR certified",
-        "",
+        "Worked at global headquarters on multiple projects, including LIFO calculation, reviewing CFC balance sheets to determine the potential for cash repatriation, and preparing statements for Textron’s federal returns.",
+        "Led nationwide team to first place at intern conference with a project on Bell APT 70 Government and commercial supply and demand analysis.",
+        "Engaged with senior leadership to explore personal goals, M&A, and tax law concepts",
       ],
     ],
+
+    [
+      ["/doordash.png"],
+      ["Doordash"],
+      ["Independent Contractor"],
+      ["Monmouth County, NJ"],
+      ["Intermittant 2018-2021"],
+      [],
+    ],
+    [
+      ["/abc.png"],
+      ["Atlantic Bagel Company"],
+      ["Fry Cook"],
+      ["Rumson, NJ"],
+      ["Summer 2020"],
+      [],
+    ],
+    [["/rcc.png"], ["Rumson Country Club"], ["Caddy"], ["Rumson, NJ"], [], []],
+    [
+      ["/country_club.png"],
+      ["Country Club Services"],
+      ["Valet Services"],
+      [""],
+      [],
+      [],
+    ],
+    [
+      ["/trll.png"],
+      ["Two River Little League"],
+      ["Umpire"],
+      ["Monmouth County, NJ"],
+      [],
+      [],
+    ],
+    [
+      ["bap.png"],
+      ["Beta Alpha Psi - National Honor Society"],
+      ["Chapter President"],
+      [""],
+      [""],
+      [],
+    ],
+    [["spawn.png"], ["SPAWN"], ["Cohort 2 Fellow"], [""], [""], []],
   ];
   const education = [
     "education_image.png",
     "Education Title",
-    "School",
+    "Clemson University",
     "Major",
-    ["GPA", "Major"],
+    ["3.7", "Accounting"],
   ];
 
   const titles2 = ["", "", "Awards & Accolades", "Skills & Hobbies"];
@@ -112,11 +175,15 @@ export default function FlippingCard() {
                     <div className="flex-col overflow-y-auto">
                       {index === 0 &&
                         work_experience.map((item) => (
-                          <div className="flex flex-row gap-5 mb-10 ml-5 mr-5">
-                            <div className="flex-1 max-w-[33.34%]">
-                              <img src={`${item[0]}`} alt="job_image" />
+                          <div className="flex flex-row items-center gap-5 mb-10 ml-5 mr-5">
+                            <div className="flex-shrink-0 max-w-[33.34%]">
+                              <img
+                                className="object-contain"
+                                src={`${item[0]}`}
+                                alt="job_image"
+                              />
                             </div>
-                            <div className="flex-1 max-w-[66.6%]">
+                            <div className="ml-10 flex-1 max-w-[66.6%]">
                               <div className="flex-col">
                                 <div className="flex flex-row justify-between">
                                   <h3
