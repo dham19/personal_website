@@ -121,11 +121,23 @@ export default function FlippingCard() {
     [["spawn.png"], ["SPAWN"], ["Cohort 2 Fellow"], [""], [""], []],
   ];
   const education = [
-    "education_image.png",
-    "Education Title",
-    "Clemson University",
-    "Major",
-    ["3.7", "Accounting"],
+    [
+      ["clemson"],
+      ["clemson1.jpeg"],
+      ["Clemson University"],
+      ["Location", "major", "grad date"],
+      ["class 1", "2,", "3"],
+      ["biggest lesson learned"],
+      ["ec1", "ec2", "ec3", "ec4"],
+    ],
+    [
+      ["cba"],
+      ["cba1.jpeg"],
+      ["Christian Brothers Academy"],
+      ["basic stufff"],
+      ["class 1", "2,", "3"],
+      ["biggest lesson learned"],
+    ],
   ];
 
   const titles2 = ["", "", "Awards & Accolades", "Skills & Hobbies"];
@@ -134,16 +146,46 @@ export default function FlippingCard() {
   const lower_content = [
     [
       [
-        "ACC All Academic Student Athlete",
-        "As an athlete of Clemson University, I pride myself in running ",
+        "Beta Alpha Psi - National Honor Society Chapter President",
+        "Fall 2021 - Spring 2023",
       ],
-      ["award 2", "desc"],
-      ["award 3", "desc"],
+      [
+        "Clemson University Cryptocurrency Club - Investment Director & Treasurer",
+        "Spring 2022 - Spring 2023",
+      ],
+      [
+        "Clemson University President’s List, Dean’s List, and/or Honor Roll",
+        "Spring 2020 – Spring 2023",
+      ],
+      ["Clemson University Wrestling Club", "Fall 2021 – Spring 2023"],
+      [
+        "Clemson University - NCAA Division 1 Track and Field",
+        "Aug. 2019 - Spring 2021",
+      ],
+      ["ACC All-Academic Student-Athlete", "Spring 2020 - Spring 2021"],
     ],
     [
-      ["Hobby 1", "desc"],
-      ["Hobby 2", "desc"],
-      ["Hobby 3", "desc"],
+      // Skills
+      [
+        "Microsoft Office",
+        "Alteryx",
+        "PowerIB",
+        "SQL",
+        "Python",
+        "UiPath",
+        "Public Speaking & Presenting",
+        "Tax Research",
+        "Business negotiations",
+      ],
+      // Hobbies
+      [
+        ["Volunteer Work", "100+ years since 2018"],
+        ["Triathalons", ""],
+        ["Investment Analysis", ""],
+        ["Reading", ""],
+        ["Blockchain", ""],
+        ["Entrepreneurship", ""],
+      ],
     ],
   ];
 
@@ -168,11 +210,15 @@ export default function FlippingCard() {
             >
               <div className="card-content h-full flex flex-col justify-start">
                 <div className="card-footer rounded-b-[20px] bg-white min-h-[100px] flex flex-col items-center justify-center">
-                  <h2 className="text-xl font-semibold text-black text-center">
+                  <h2
+                    className={` ${
+                      index == expandedIndex ? "hidden" : ""
+                    } text-xl font-semibold text-black text-center`}
+                  >
                     {titles1[index]}
                   </h2>
                   {index === expandedIndex && (
-                    <div className="flex-col overflow-y-auto">
+                    <div className="flex-col w-full h-full overflow-y-auto">
                       {index === 0 &&
                         work_experience.map((item) => (
                           <div className="flex flex-row items-center gap-5 mb-10 ml-5 mr-5">
@@ -216,7 +262,76 @@ export default function FlippingCard() {
                             </div>
                           </div>
                         ))}
-                      {index === 1 && <h1>hello</h1>}
+                      {index === 1 && (
+                        <>
+                          {/* CLEMSON */}
+                          <div className="flex flex-col place-items-center  w-full mb-5">
+                            <div
+                              className={`${education[0][0]}-background flex flex-col items-center justify-center w-full h-full p-24`}
+                            >
+                              <h1 className="text-black text-5xl font-normal ml-10 mr-10">
+                                {education[0][2]}
+                              </h1>
+                            </div>
+
+                            {/* Header Information  */}
+                            <div className="flex flex-col w-2/3 p-0">
+                              <div className="flex flex-row justify-between p-0 w-full">
+                                <p className="ml-10">
+                                  Bachelor of Science in Accounting
+                                </p>
+                                <p className="mr-10">Graduation May 2023</p>
+                              </div>
+                              <div className="flex flex-row justify-between w-full">
+                                <p className="ml-10">Master of Accountancy</p>
+                                <p className="mr-10">Graduation August 2024</p>
+                              </div>
+                              <div className="flex flex-row justify-between w-full">
+                                <p className="ml-10">Cumulative GPA: 3.7/4.0</p>
+                              </div>
+
+                              <div className="border-b">
+                                <p className="ml-10 mr-10">
+                                  Extracurriculars:{" "}
+                                  {/* Makes a comma-separated list */}
+                                  {education[0][6].map((e, i) => (
+                                    <span key={i}>
+                                      {i > 0 && ", "}
+                                      {<i>{e}</i>}
+                                    </span>
+                                  ))}
+                                </p>
+                              </div>
+                            </div>
+
+                            {/* Favorite Classes Div  */}
+                            <div className="flex flex-col">
+                              <h2 className="">Favorite Classes</h2>
+                              <ul className="list-disc pl-6">
+                                <li>Class 1</li>
+                                <li>class 2</li>
+                                <li>class 3</li>
+                              </ul>
+                              <h2 className="text-black">Extracurriculars</h2>
+                              <ul className="list-disc">
+                                <li>ec 1</li>
+                                <li>ec 2</li>
+                              </ul>
+                            </div>
+                          </div>
+                          {/* CBA */}
+                          <div className="flex flex-col">
+                            <div
+                              className={`${education[1][0]}-background flex items-center justify-center h-full w-full p-24`}
+                            >
+                              <h1 className="text-black text-5xl font-normal ml-10 mr-10">
+                                {education[1][2]}
+                              </h1>
+                            </div>
+                            <p>helloa sdf asdfjlk </p>
+                          </div>
+                        </>
+                      )}
                     </div>
                   )}
                 </div>
@@ -249,21 +364,49 @@ export default function FlippingCard() {
                     {titles2[index]}
                   </h2>
                   {index === expandedIndex && (
-                    // <p className="mt-2 text-gray-300 text-center">
-                    //   {cardDescriptions[index]}{" "}
-                    // </p>
-                    <ul className="grid place-items-center overflow-y-auto w-full">
-                      {lower_content[index - 2].map((item) => (
-                        <div className="mb-5 grid place-items-center">
-                          <li className="font-bold text-black "> {item[0]}</li>
-                          <li className=" text-black italic"> {item[1]}</li>
+                    <div className="overflow-y-auto w-full">
+                      {index === 2 && (
+                        // AWARDS
+                        <div className="flex-column">
+                          <ul className=" overflow-y-auto w-full">
+                            {lower_content[0].map((item) => (
+                              <li className="flex flex-row justify-between">
+                                <p className="ml-5">{item[0]}</p>
+                                <p className="mr-5 italic">{item[1]}</p>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
-                        // <li className="p-5">
-                        //   <p className="font-bold text-white ">{item[0]}</p>
-                        //   <p className="text-white">{item[1]}</p>
-                        // </li>
-                      ))}
-                    </ul>
+                      )}
+                      {index === 3 && (
+                        // SKILLS AND HOBBIES
+                        <div className="flex-column">
+                          <h2 className="text-xl font-bold text-black text-center border-b">
+                            Skills
+                          </h2>
+                          <ul className=" overflow-y-auto w-full">
+                            {lower_content[1][0].map((item) => (
+                              <div className="mb-5 grid place-items-center">
+                                <li>{item}</li>
+                              </div>
+                            ))}
+                          </ul>
+                          <h2 className="text-xl font-bold text-black text-center border-b">
+                            Hobbies
+                          </h2>
+                          <ul className="grid place-items-center overflow-y-auto w-full">
+                            {lower_content[1][1].map((item) => (
+                              <div className="mb-5 grid place-items-center">
+                                <li className="flex justify-between">
+                                  <p>{item[0]}</p>
+                                  <p>{item[1]}</p>
+                                </li>
+                              </div>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
                   )}
                 </div>
               </div>

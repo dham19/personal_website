@@ -3,7 +3,6 @@ import { Inter, Jomolhari } from "next/font/google";
 import "./globals.css";
 
 // components
-import Navbar from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 

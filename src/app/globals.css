@@ -149,6 +149,38 @@ form button {
   background-position: center center; /* Center the background */
 }
 
+.clemson-background {
+  width: 100%;
+  height: 100%; /* Set the height as needed */
+  position: relative;
+  /* Other styles... */
+
+  /* Background with faded image */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/clemson1.jpeg"); /* Replace with your image path */
+  background-size: cover; /* Adjust based on your layout */
+  background-position: center center; /* Center the background */
+}
+
+.cba-background {
+  width: 100%;
+  height: 100%; /* Set the height as needed */
+  position: relative;
+  /* Other styles... */
+
+  /* Background with faded image */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/cba1.jpeg"); /* Replace with your image path */
+  background-size: cover; /* Adjust based on your layout */
+  background-position: center center; /* Center the background */
+}
+
 /* FLIP STUFF */
 /* Container for flipping animation */
 .flip-container {
