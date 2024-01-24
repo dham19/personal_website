@@ -7,17 +7,17 @@ export default function About({ children }: { children: React.ReactNode }) {
     <>
       <div
         id="about"
-        className="flex flex-col place-items-center background-container bg-fixed px-10 py-10"
+        className="flex flex-col place-items-center background-container bg-fixed md:px-10 md:py-10"
       >
-        <div className="flex flex-row w-full">
-          <div className="flex w-1/3 ml-24 mr-10">
+        <div className="flex flex-col md:flex-row w-full">
+          <div className="flex w-full p-4 md:w-1/3 md:ml-24 md:mr-10 md:p-0">
             <img
               className="object-contain"
               src="louis_hype.jpeg"
               alt="louis_image"
             />
           </div>
-          <div className="flex flex-col w-2/3 mr-24">
+          <div className="flex flex-col w-full p-2 md:p-0 md:w-2/3 md:mr-24">
             <h2 className="flex text-gray-700 mb-5 text-2xl">My Story</h2>
             {children}
             <i>

@@ -7,15 +7,22 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { join } from "node:path/posix";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function FlippingCard() {
   const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const largeScreen = useMediaQuery("(min-width:600px)");
 
   const handleCardClick = (index: any) => {
     setExpandedIndex(index === expandedIndex ? -1 : index);
   };
 
   const cardVariants = {
+    sm_expanded: {
+      width: "400px",
+      height: "600px",
+    },
     expanded: {
       width: "1500px",
       height: "500px",
@@ -218,11 +225,20 @@ export default function FlippingCard() {
             <motion.div
               key={index}
               className={`card cursor-pointer h-[150px] bg-cover bg-center rounded-[20px] ${
-                index === expandedIndex ? "expanded" : ""
-              }`}
+                index === expandedIndex ? "sm_expanded" : ""
+              } 
+              md:${index === expandedIndex ? "expanded" : ""}`}
               variants={cardVariants}
               initial="collapsed"
-              animate={index === expandedIndex ? "expanded" : "collapsed"}
+              animate={
+                largeScreen
+                  ? index === expandedIndex
+                    ? "expanded"
+                    : "collapsed"
+                  : index === expandedIndex
+                  ? "sm_expanded"
+                  : "collapsed"
+              }
               transition={{ duration: 0.5 }}
               onClick={() => handleCardClick(index)}
               style={{
@@ -244,16 +260,16 @@ export default function FlippingCard() {
                         work_experience.map((item, i) => (
                           <div
                             key={i}
-                            className="flex flex-row items-center gap-5 mb-10 ml-5 mr-5"
+                            className="flex flex-col md:flex-row items-center gap-5 mb-10 ml-5 mr-5"
                           >
-                            <div className="flex-shrink-0 max-w-[33.34%]">
+                            <div className="flex-shrink-0 w-full md:max-w-[33.34%]">
                               <img
                                 className="object-contain"
                                 src={`${item[0]}`}
                                 alt="job_image"
                               />
                             </div>
-                            <div className="ml-10 flex-1 max-w-[66.6%]">
+                            <div className="ml-10 flex-1 w-full mr-10 md:max-w-[66.6%] md:mr-0">
                               <div className="flex-col">
                                 <div className="flex flex-row justify-between">
                                   <h3
@@ -301,7 +317,7 @@ export default function FlippingCard() {
                             </div>
 
                             {/* Header Information  */}
-                            <div className="flex flex-col w-2/3 p-0 mt-2">
+                            <div className="flex flex-col md:w-2/3 p-0 mt-2">
                               <div className="flex flex-row justify-between p-0 w-full italic">
                                 <p className="ml-10">
                                   Bachelor of Science in Accounting
@@ -313,12 +329,12 @@ export default function FlippingCard() {
                                 <p className="mr-10">Graduation August 2024</p>
                               </div>
                             </div>
-                            <div className="flex flex-col w-2/3 p-0 mt-10 border-b">
+                            <div className="flex flex-col md:w-2/3 p-0 mt-10 border-b">
                               <div className="flex flex-row justify-between w-full">
                                 <p className="ml-10">Cumulative GPA: 3.7/4.0</p>
                               </div>
 
-                              <p className="ml-10 mr-10">
+                              <p className="mx-2 my-4 md:my-0 md:ml-10 md:mr-10">
                                 Extracurriculars:{" "}
                                 {/* Makes a comma-separated list */}
                                 {education[0][6].map((e, j) => (
@@ -331,9 +347,9 @@ export default function FlippingCard() {
                             </div>
 
                             {/* Favorite Classes Div  */}
-                            <div className="flex flex-row w-full">
-                              <div className="flex w-1/4 " />
-                              <div className="flex w-1/2 flex-col">
+                            <div className="flex flex-col md:flex-row w-full">
+                              <div className="hidden md:flex md:w-1/4 " />
+                              <div className="flex w-full p-2 md:p-0 md:w-1/2 flex-col">
                                 <h2 className="text-gray-500">
                                   Favorite Classes
                                 </h2>
@@ -345,9 +361,9 @@ export default function FlippingCard() {
                               </div>
                             </div>
 
-                            <div className="flex flex-row w-full">
-                              <div className="flex w-1/4 " />
-                              <div className="flex w-1/2 flex-col">
+                            <div className="flex flex-col items-center md:flex-row w-full">
+                              <div className="hidden md:flex md:w-1/4 " />
+                              <div className="flex w-full p-2 md:p-0 md:w-1/2 flex-col">
                                 <h2 className="text-gray-500">
                                   Biggest Lesson Learned:
                                 </h2>
@@ -369,7 +385,7 @@ export default function FlippingCard() {
                             </div>
 
                             {/* Header Information  */}
-                            <div className="flex flex-col w-2/3 p-0">
+                            <div className="flex flex-col p-2 md:w-2/3 md:p-0">
                               <div className="flex flex-row justify-between p-0 w-full italic mb-10 mt-2">
                                 <p className=" ml-10">Catholic Prep School</p>
                                 <p className=" mr-10">Graduation May 2019</p>
@@ -380,7 +396,7 @@ export default function FlippingCard() {
                               </div> */}
 
                               <div className="border-b">
-                                <p className="ml-10 mr-10">
+                                <p className="md:mx-10">
                                   Extracurriculars:{" "}
                                   {/* Makes a comma-separated list */}
                                   {education[1][6].map((e, l) => (
@@ -393,23 +409,31 @@ export default function FlippingCard() {
                               </div>
                             </div>
 
-                            <div className="flex flex-col">
-                              <h2 className="text-gray-500">
-                                Favorite Classes
-                              </h2>
-                              <ul className="list-disc pl-6">
-                                {education[1][4].map((c, m) => (
-                                  <li key={m} className="">
-                                    {c}
-                                  </li>
-                                ))}
-                              </ul>
+                            <div className="flex flex-col md:flex-row w-full">
+                              <div className="hidden md:flex md:w-1/4 " />
+                              <div className="flex w-full p-2 md:p-0 md:w-1/2 flex-col">
+                                <h2 className="text-gray-500">
+                                  Favorite Classes
+                                </h2>
+                                <ul className="list-disc pl-6 ml-10">
+                                  {education[1][4].map((c, k) => (
+                                    <li key={k}>{c}</li>
+                                  ))}
+                                </ul>
+                              </div>
                             </div>
 
-                            <h2 className="text-gray-500 mt-2">
-                              Biggest Lesson Learned:
-                            </h2>
-                            <p className="mx-10 w-2/3">{education[0][5]}</p>
+                            <div className="flex flex-col items-center md:flex-row w-full">
+                              <div className="hidden md:flex md:w-1/4 " />
+                              <div className="flex w-full p-2 md:p-0 md:w-1/2 flex-col">
+                                <h2 className="text-gray-500">
+                                  Biggest Lesson Learned:
+                                </h2>
+                                <p className="ml-10 mr-10 pl-6">
+                                  {education[1][5]}
+                                </p>
+                              </div>
+                            </div>
                           </div>
                         </>
                       )}
@@ -432,7 +456,15 @@ export default function FlippingCard() {
               }`}
               variants={cardVariants}
               initial="collapsed"
-              animate={index === expandedIndex ? "expanded" : "collapsed"}
+              animate={
+                largeScreen
+                  ? index === expandedIndex
+                    ? "expanded"
+                    : "collapsed"
+                  : index === expandedIndex
+                  ? "sm_expanded"
+                  : "collapsed"
+              }
               transition={{ duration: 0.5 }}
               onClick={() => handleCardClick(index)}
               style={{
