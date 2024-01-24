@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="flex justify-between mb-10">
         {/* insta */}
         <a
-          className="mx-20"
+          className="mx-10 md:mx-20"
           href="https://www.instagram.com/jakejakub/"
           target="_blank"
         >
@@ -26,7 +26,7 @@ export default function Contact() {
 
         {/* Twitter */}
         <a
-          className="mx-20"
+          className="mx-10 md:mx-20"
           href="https://twitter.com/jakejakub555"
           target="_blank"
         >
@@ -43,7 +43,7 @@ export default function Contact() {
 
         {/* LinkedIn */}
         <a
-          className="mx-20"
+          className="mx-10 md:mx-20"
           href="https://www.linkedin.com/in/jake-jakub/"
           target="_blank"
         >
