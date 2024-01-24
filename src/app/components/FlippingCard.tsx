@@ -6,6 +6,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { join } from "node:path/posix";
 
 export default function FlippingCard() {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -240,8 +241,11 @@ export default function FlippingCard() {
                   {index === expandedIndex && (
                     <div className="flex-col w-full h-full overflow-y-auto">
                       {index === 0 &&
-                        work_experience.map((item) => (
-                          <div className="flex flex-row items-center gap-5 mb-10 ml-5 mr-5">
+                        work_experience.map((item, i) => (
+                          <div
+                            key={i}
+                            className="flex flex-row items-center gap-5 mb-10 ml-5 mr-5"
+                          >
                             <div className="flex-shrink-0 max-w-[33.34%]">
                               <img
                                 className="object-contain"
@@ -275,8 +279,10 @@ export default function FlippingCard() {
                                 </div>
                               </div>
                               <ul className="list-disc pl-6">
-                                {item[5].map((bullet) => (
-                                  <li className="mb-2">{bullet}</li>
+                                {item[5].map((bullet, j) => (
+                                  <li key={j} className="mb-2">
+                                    {bullet}
+                                  </li>
                                 ))}
                               </ul>
                             </div>
@@ -315,9 +321,9 @@ export default function FlippingCard() {
                               <p className="ml-10 mr-10">
                                 Extracurriculars:{" "}
                                 {/* Makes a comma-separated list */}
-                                {education[0][6].map((e, i) => (
-                                  <span key={i}>
-                                    {i > 0 && ", "}
+                                {education[0][6].map((e, j) => (
+                                  <span key={j}>
+                                    {j > 0 && ", "}
                                     {<i>{e}</i>}
                                   </span>
                                 ))}
@@ -332,8 +338,8 @@ export default function FlippingCard() {
                                   Favorite Classes
                                 </h2>
                                 <ul className="list-disc pl-6 ml-10">
-                                  {education[0][4].map((c) => (
-                                    <li>{c}</li>
+                                  {education[0][4].map((c, k) => (
+                                    <li key={k}>{c}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -377,9 +383,9 @@ export default function FlippingCard() {
                                 <p className="ml-10 mr-10">
                                   Extracurriculars:{" "}
                                   {/* Makes a comma-separated list */}
-                                  {education[1][6].map((e, i) => (
-                                    <span key={i}>
-                                      {i > 0 && ", "}
+                                  {education[1][6].map((e, l) => (
+                                    <span key={l}>
+                                      {l > 0 && ", "}
                                       {<i>{e}</i>}
                                     </span>
                                   ))}
@@ -392,8 +398,10 @@ export default function FlippingCard() {
                                 Favorite Classes
                               </h2>
                               <ul className="list-disc pl-6">
-                                {education[1][4].map((c) => (
-                                  <li className="">{c}</li>
+                                {education[1][4].map((c, m) => (
+                                  <li key={m} className="">
+                                    {c}
+                                  </li>
                                 ))}
                               </ul>
                             </div>
@@ -442,8 +450,11 @@ export default function FlippingCard() {
                         // AWARDS
                         <div className="flex-column">
                           <ul className=" overflow-y-auto w-full">
-                            {lower_content[0].map((item) => (
-                              <li className="flex flex-row justify-between mt-2">
+                            {lower_content[0].map((item, i) => (
+                              <li
+                                key={i}
+                                className="flex flex-row justify-between mt-2"
+                              >
                                 <p className="ml-5 my-2">{item[0]}</p>
                                 <p className="mr-5 italic">{item[1]}</p>
                               </li>
@@ -458,8 +469,11 @@ export default function FlippingCard() {
                             Skills
                           </h2>
                           <ul className=" overflow-y-auto w-full">
-                            {lower_content[1][0].map((item) => (
-                              <div className="mb-5 grid place-items-center">
+                            {lower_content[1][0].map((item, j) => (
+                              <div
+                                key={j}
+                                className="mb-5 grid place-items-center"
+                              >
                                 <li>{item}</li>
                               </div>
                             ))}
@@ -468,8 +482,11 @@ export default function FlippingCard() {
                             Hobbies
                           </h2>
                           <ul className="grid place-items-center overflow-y-auto w-full">
-                            {lower_content[1][1].map((item) => (
-                              <div className="mb-5 grid place-items-center">
+                            {lower_content[1][1].map((item, l) => (
+                              <div
+                                key={l}
+                                className="mb-5 grid place-items-center"
+                              >
                                 <li className="flex justify-between">
                                   <p>{item[0]}</p>
                                   <p>{item[1]}</p>
