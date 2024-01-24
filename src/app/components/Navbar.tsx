@@ -13,8 +13,8 @@ export default function Navbar() {
         <Link className="text-black mr-4" href="/resume.pdf" target="_blank">
           Download CV
         </Link>
-        <Link className="text-black mr-4" href="/works">
-          Published Works
+        <Link className="text-black mr-4" href="/#about">
+          About Me
         </Link>
         <Link className="text-black mr-4" href="#connect">
           Connect

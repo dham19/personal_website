@@ -12,7 +12,7 @@ body {
 }
 h1,
 h2 {
-  @apply font-bold text-primary text-lg;
+  @apply font-bold text-gray-500 text-lg;
 }
 main {
   @apply w-full mx-auto;
@@ -110,9 +110,9 @@ form button {
   @apply font-bold text-gray-700 text-sm 
     mb-0;
 } */
-.card p {
+/* .card p {
   @apply my-4 text-sm leading-6;
-}
+} */
 
 /* pill styles */
 .pill {

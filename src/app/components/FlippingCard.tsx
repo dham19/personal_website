@@ -61,8 +61,22 @@ export default function FlippingCard() {
       ["Educator"],
       ["Clemson, SC"],
       ["Fall 2023"],
+      [
+        "Ability to connect with customers in a meaningful way, creating a relatable desire to own our product",
+        "Consistently met or exceeded sales targets, including what the manager believes to be the most pairs of mens pants single-handedly sold in one day",
+        "Remain calm, relaxed, and adaptable in all situations",
+        "Speak clearly, communicate effectively, and always smile!",
+      ],
+    ],
+    [
+      ["bap.png"],
+      ["Beta Alpha Psi - National Honor Society"],
+      ["Chapter President"],
+      [""],
+      [""],
       [],
     ],
+    [["spawn.png"], ["SPAWN"], ["Cohort 2 Fellow"], [""], [""], []],
 
     [
       ["/nps.png"],
@@ -93,6 +107,14 @@ export default function FlippingCard() {
       ["Summer 2020"],
       [],
     ],
+    [
+      ["vector.jpeg"],
+      ["Vector Marketing"],
+      ["Field Sales Representative"],
+      ["Eatontown, NJ"],
+      ["Apr 2018 - Aug 2018"],
+      [],
+    ],
     [["/rcc.png"], ["Rumson Country Club"], ["Caddy"], ["Rumson, NJ"], [], []],
     [
       ["/country_club.png"],
@@ -110,15 +132,6 @@ export default function FlippingCard() {
       [],
       [],
     ],
-    [
-      ["bap.png"],
-      ["Beta Alpha Psi - National Honor Society"],
-      ["Chapter President"],
-      [""],
-      [""],
-      [],
-    ],
-    [["spawn.png"], ["SPAWN"], ["Cohort 2 Fellow"], [""], [""], []],
   ];
   const education = [
     [
@@ -126,17 +139,24 @@ export default function FlippingCard() {
       ["clemson1.jpeg"],
       ["Clemson University"],
       ["Location", "major", "grad date"],
-      ["class 1", "2,", "3"],
-      ["biggest lesson learned"],
-      ["ec1", "ec2", "ec3", "ec4"],
+      ["Accounting", "Business tech", "financial analysis"],
+      [
+        "During my time at Clemson University, one of the greatest lessons I learned was the value of collaboration and diverse perspectives. Engaging in group projects and participating in various campus activities exposed me to individuals with different backgrounds, beliefs, and ideas. ",
+      ],
+      [
+        "D1 Cross Country/Track Athlete",
+        "Clemson Blockchain Treasurer",
+        "Beta Alpha Psi - Accounting and Finance Honor Society Chapter President",
+      ],
     ],
     [
       ["cba"],
       ["cba1.jpeg"],
       ["Christian Brothers Academy"],
       ["basic stufff"],
-      ["class 1", "2,", "3"],
-      ["biggest lesson learned"],
+      ["Math", "Physics", "CS"],
+      ["Brotherhood."],
+      ["Cross Country", "Track"],
     ],
   ];
 
@@ -275,26 +295,89 @@ export default function FlippingCard() {
                             </div>
 
                             {/* Header Information  */}
-                            <div className="flex flex-col w-2/3 p-0">
-                              <div className="flex flex-row justify-between p-0 w-full">
+                            <div className="flex flex-col w-2/3 p-0 mt-2">
+                              <div className="flex flex-row justify-between p-0 w-full italic">
                                 <p className="ml-10">
                                   Bachelor of Science in Accounting
                                 </p>
                                 <p className="mr-10">Graduation May 2023</p>
                               </div>
-                              <div className="flex flex-row justify-between w-full">
+                              <div className="flex flex-row justify-between w-full italic">
                                 <p className="ml-10">Master of Accountancy</p>
                                 <p className="mr-10">Graduation August 2024</p>
                               </div>
+                            </div>
+                            <div className="flex flex-col w-2/3 p-0 mt-10 border-b">
                               <div className="flex flex-row justify-between w-full">
                                 <p className="ml-10">Cumulative GPA: 3.7/4.0</p>
                               </div>
+
+                              <p className="ml-10 mr-10">
+                                Extracurriculars:{" "}
+                                {/* Makes a comma-separated list */}
+                                {education[0][6].map((e, i) => (
+                                  <span key={i}>
+                                    {i > 0 && ", "}
+                                    {<i>{e}</i>}
+                                  </span>
+                                ))}
+                              </p>
+                            </div>
+
+                            {/* Favorite Classes Div  */}
+                            <div className="flex flex-row w-full">
+                              <div className="flex w-1/4 " />
+                              <div className="flex w-1/2 flex-col">
+                                <h2 className="text-gray-500">
+                                  Favorite Classes
+                                </h2>
+                                <ul className="list-disc pl-6 ml-10">
+                                  {education[0][4].map((c) => (
+                                    <li>{c}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+
+                            <div className="flex flex-row w-full">
+                              <div className="flex w-1/4 " />
+                              <div className="flex w-1/2 flex-col">
+                                <h2 className="text-gray-500">
+                                  Biggest Lesson Learned:
+                                </h2>
+                                <p className="ml-10 mr-10 pl-6">
+                                  {education[0][5]}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* CBA */}
+                          <div className="flex flex-col place-items-center w-full">
+                            <div
+                              className={`${education[1][0]}-background flex items-center justify-center h-full w-full p-24`}
+                            >
+                              <h1 className="text-black text-5xl font-normal ml-10 mr-10">
+                                {education[1][2]}
+                              </h1>
+                            </div>
+
+                            {/* Header Information  */}
+                            <div className="flex flex-col w-2/3 p-0">
+                              <div className="flex flex-row justify-between p-0 w-full italic mb-10 mt-2">
+                                <p className=" ml-10">Catholic Prep School</p>
+                                <p className=" mr-10">Graduation May 2019</p>
+                              </div>
+
+                              {/* <div className="flex flex-row justify-between w-full">
+                                <p className="ml-10">Cumulative GPA: 3.7/4.0</p>
+                              </div> */}
 
                               <div className="border-b">
                                 <p className="ml-10 mr-10">
                                   Extracurriculars:{" "}
                                   {/* Makes a comma-separated list */}
-                                  {education[0][6].map((e, i) => (
+                                  {education[1][6].map((e, i) => (
                                     <span key={i}>
                                       {i > 0 && ", "}
                                       {<i>{e}</i>}
@@ -304,31 +387,21 @@ export default function FlippingCard() {
                               </div>
                             </div>
 
-                            {/* Favorite Classes Div  */}
                             <div className="flex flex-col">
-                              <h2 className="">Favorite Classes</h2>
+                              <h2 className="text-gray-500">
+                                Favorite Classes
+                              </h2>
                               <ul className="list-disc pl-6">
-                                <li>Class 1</li>
-                                <li>class 2</li>
-                                <li>class 3</li>
-                              </ul>
-                              <h2 className="text-black">Extracurriculars</h2>
-                              <ul className="list-disc">
-                                <li>ec 1</li>
-                                <li>ec 2</li>
+                                {education[1][4].map((c) => (
+                                  <li className="">{c}</li>
+                                ))}
                               </ul>
                             </div>
-                          </div>
-                          {/* CBA */}
-                          <div className="flex flex-col">
-                            <div
-                              className={`${education[1][0]}-background flex items-center justify-center h-full w-full p-24`}
-                            >
-                              <h1 className="text-black text-5xl font-normal ml-10 mr-10">
-                                {education[1][2]}
-                              </h1>
-                            </div>
-                            <p>helloa sdf asdfjlk </p>
+
+                            <h2 className="text-gray-500 mt-2">
+                              Biggest Lesson Learned:
+                            </h2>
+                            <p className="mx-10 w-2/3">{education[0][5]}</p>
                           </div>
                         </>
                       )}
@@ -370,8 +443,8 @@ export default function FlippingCard() {
                         <div className="flex-column">
                           <ul className=" overflow-y-auto w-full">
                             {lower_content[0].map((item) => (
-                              <li className="flex flex-row justify-between">
-                                <p className="ml-5">{item[0]}</p>
+                              <li className="flex flex-row justify-between mt-2">
+                                <p className="ml-5 my-2">{item[0]}</p>
                                 <p className="mr-5 italic">{item[1]}</p>
                               </li>
                             ))}

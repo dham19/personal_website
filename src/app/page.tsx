@@ -1,12 +1,9 @@
-import Link from "next/link";
 import FlippingCard from "./components/FlippingCard";
-import Image from "next/image";
-import TestButton from "./components/TestButton";
 import Navbar from "./components/Navbar";
 import WhiteDivider from "./components/WhiteDivider";
 import Contact from "./components/Contact";
 import About from "./components/About";
-import Experience from "./components/Experience";
+import GetEssay from "./components/GetEssay";
 
 export default function Home() {
   return (
@@ -14,8 +11,9 @@ export default function Home() {
       <Navbar />
       <FlippingCard />
       <WhiteDivider />
-      {/* <Experience /> */}
-      <About />
+      <About>
+        <GetEssay />
+      </About>
       <Contact />
     </main>
   );
