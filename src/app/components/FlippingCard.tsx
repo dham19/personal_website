@@ -81,8 +81,8 @@ export default function FlippingCard() {
       ["Beta Alpha Psi - National Honor Society"],
       ["Chapter President"],
       [""],
-      [""],
       [],
+      ["Chapter earned Gold Status nationally"],
     ],
     [["spawn.png"], ["SPAWN"], ["Cohort 2 Fellow"], [""], [""], []],
 
@@ -147,14 +147,16 @@ export default function FlippingCard() {
       ["clemson1.jpeg"],
       ["Clemson University"],
       ["Location", "major", "grad date"],
-      ["Accounting", "Business tech", "financial analysis"],
-      [
-        "During my time at Clemson University, one of the greatest lessons I learned was the value of collaboration and diverse perspectives. Engaging in group projects and participating in various campus activities exposed me to individuals with different backgrounds, beliefs, and ideas. ",
-      ],
+      ["Business Strategy", "Advanced Analytics", "International Taxation"],
+      [""],
       [
         "D1 Cross Country/Track Athlete",
-        "Clemson Blockchain Treasurer",
-        "Beta Alpha Psi - Accounting and Finance Honor Society Chapter President",
+        "Clemson Blockchain (Treasurer)",
+        "Beta Alpha Psi - Accounting and Finance Honor Society (Chapter President)",
+        "Club Wrestling",
+        "Flag Football",
+        "Softball",
+        "Rec Golf",
       ],
     ],
     [
@@ -162,9 +164,16 @@ export default function FlippingCard() {
       ["cba1.jpeg"],
       ["Christian Brothers Academy"],
       ["basic stufff"],
-      ["Math", "Physics", "CS"],
+      ["AP Computer Science", "Calculus", "Principles of Engineering"],
       ["Brotherhood."],
-      ["Cross Country", "Track"],
+      [
+        "Cross Country",
+        "Track",
+        "Space and Aviation Club",
+        "Trivia Club",
+        "Wrestling",
+        "participation in the longest winning streak in the history of sports (CBAXC - currently at 398 wins in a row and counting).",
+      ],
     ],
   ];
 
@@ -173,10 +182,14 @@ export default function FlippingCard() {
   // name then description
   const lower_content = [
     [
+      ["Master of Accountancy", "Aug 2024"],
+      ["Bachelor of Science in Accounting", "May 2023"],
+      ["Alteryx Designer Core Certified", "Nov 2023"],
       [
         "Beta Alpha Psi - National Honor Society Chapter President",
         "Fall 2021 - Spring 2023",
       ],
+
       [
         "Clemson University Cryptocurrency Club - Investment Director & Treasurer",
         "Spring 2022 - Spring 2023",
@@ -195,24 +208,25 @@ export default function FlippingCard() {
     [
       // Skills
       [
-        "Microsoft Office",
-        "Alteryx",
-        "PowerIB",
-        "SQL",
-        "Python",
-        "UiPath",
-        "Public Speaking & Presenting",
-        "Tax Research",
-        "Business negotiations",
+        "Microsoft Office (significant experience in all dimensions",
+        "Alteryx (Alteryx Certified)",
+        "PowerBI (significant experience",
+        "SQL (significant experience)",
+        "Python (basics)",
+        "UiPath (intermediate)",
+        "Public Speaking & Presenting (intermediate experience, passionate)",
+        "Tax Research (significant experience)",
+        "Business negotiations (basics)",
+        "I also view myself as a strong leader, problem solver, creative thinker, and active listener. My biggest weakness is that I eagerly take on tasks and rush to get things done - but I’m never afraid to accept my errors and go back to correct mistakes",
       ],
       // Hobbies
       [
-        ["Volunteer Work", "100+ years since 2018"],
-        ["Triathalons", ""],
-        ["Investment Analysis", ""],
-        ["Reading", ""],
+        ["volunteer Work (10+ hours per year)", ""],
+        ["running, swimming, lifting, ball sports", ""],
+        ["investment analysis", ""],
+        ["reading", ""],
         ["Blockchain", ""],
-        ["Entrepreneurship", ""],
+        ["entrepreneurship", ""],
       ],
     ],
   ];
@@ -358,6 +372,12 @@ export default function FlippingCard() {
                                     <li key={k}>{c}</li>
                                   ))}
                                 </ul>
+                                <i>
+                                  * I also had the unique opportunity to take
+                                  legitimate college credits in Billiards, Golf,
+                                  and Shotgun shooting. I love learning new
+                                  skills but these had to be excluded
+                                </i>
                               </div>
                             </div>
 
@@ -368,7 +388,14 @@ export default function FlippingCard() {
                                   Biggest Lesson Learned:
                                 </h2>
                                 <p className="ml-10 mr-10 pl-6">
-                                  {education[0][5]}
+                                  Being comfortable with yourself. Everyone has
+                                  their own unique set of skills, passions, and
+                                  attributes. You can always put on a facade,
+                                  and probably will get away with it, but deep
+                                  down you'll always be yourself. So, don't take
+                                  criticism or insults personally and continue
+                                  striving towards your own goals, treating
+                                  others with respect along the way.
                                 </p>
                               </div>
                             </div>
@@ -423,14 +450,25 @@ export default function FlippingCard() {
                               </div>
                             </div>
 
-                            <div className="flex flex-col items-center md:flex-row w-full">
+                            <div className="flex flex-col items-center md:flex-row w-full mb-7">
                               <div className="hidden md:flex md:w-1/4 " />
                               <div className="flex w-full p-2 md:p-0 md:w-1/2 flex-col">
                                 <h2 className="text-gray-500">
                                   Biggest Lesson Learned:
                                 </h2>
                                 <p className="ml-10 mr-10 pl-6">
-                                  {education[1][5]}
+                                  Hard work leads to success. I learned this
+                                  lesson late. However, after listening to
+                                  enough people successful in their respective
+                                  endeavors, I realized that those who have
+                                  succeeded might actually know what they’re
+                                  talking about. Sure, people have naive beliefs
+                                  and false perceptions about what led to their
+                                  success, but to think that discipline,
+                                  dedication, consistency, and perseverance
+                                  through trials and tribulations would do
+                                  anything but help you achieve your goals would
+                                  be a preposterous idea.
                                 </p>
                               </div>
                             </div>
@@ -506,7 +544,7 @@ export default function FlippingCard() {
                                 key={j}
                                 className="mb-5 grid place-items-center"
                               >
-                                <li>{item}</li>
+                                <li className="mx-4 md:mx-32">{item}</li>
                               </div>
                             ))}
                           </ul>
