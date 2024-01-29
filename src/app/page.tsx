@@ -14,6 +14,7 @@ export default function Home() {
       <About>
         <GetEssay />
       </About>
+      <Contact />
     </main>
   );
 }
