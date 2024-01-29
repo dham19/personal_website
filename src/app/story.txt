@@ -1,39 +1,40 @@
-For thousands of years, at every stage of civilization’s development, humans have
-debated existential questions such as the meaning of life and what differs between right and
-wrong. Ever since humans could write, people have argued both sides of nearly any situation.
-The more society progresses, one would expect more answers to these questions, but often all
-we face are more questions. This phenomenon occurs because, in many cases, there is no way
-to know what is the right decision and which choices are wrong. We cannot hit replay and see
-what the outcome would have been had we made a different decision. However, we can live by
-a certain playbook, as individuals and as a society, that governs our actions and ensures we
-stay on the most morally correct path possible. To enable this, we must make decisions with
-both rationality and sensibility, allow a set of standards to govern society but still allow
-autonomy, and have strong moral character regardless of the intensity of the situation.
+Taking on a new challenge is always fun at the beginning. However, even with a project
+as simple as a personal website, challenges come with unforeseen events and obstacles. It
+becomes more difficult than originally expected. This website took me weeks to complete (and
+is even edited months later) when I originally sat down with a friend and expected to finish it in a
+few hours. We easily could have used a template, but the inherent personalization aspect of
+building it yourself, and learning Tailwind CSS for the first time was an opportunity we did not
+want to pass up. The beauty of this challenge is that I learned new tricks and skills, and more
+importantly, I was led to my true reason for building the site in the first place.
 
-The two sides of the decision-making spectrum are rationality and sensibility. Rationality
-leads to the most mathematically calculable positive benefit, essentially which outcome seems
-best on paper. Sensibility is more concerned with the feelings of those involved as the most
-important factor in making the ethically correct decision. Oftentimes, these situations have
-congruency in choosing the best decision, but not always. For example, when a couple goes on
-a first date, the host normally offers to pay for the other person’s food. Rationally, this doesn’t
-make sense. If it is her food, then she should pay for it. However, the sensibility aspect of
-situational decision-making usually leads one to understand the social implications of paying for
-another person’s meal, and it also makes one recognize the benefit of making the other person
-feel respected and cared for.
+Throughout my life, I have been exceptionally good at making friends. I get along well
+with strangers, colleagues, and classmates, and the friends I do make are often friends for life. It
+truly is a blessing. However, I was worried when I began applying for jobs. I realized that I would
+not have the opportunity to strike a connection with the interviewer if I never made it to the
+interview. I became frustrated when editing my resume because I wanted to add many more
+elements that would never fit onto one page. Building a website, I thought, would be an
+excellent and professional way to stand out as a candidate and would allow me to showcase all
+my accomplishments. Before completion, I realized I had far less professionally acceptable
+accolades than previously thought, but it was nice not to be limited to such a confined space.
 
-In society, it is necessary that we understand both the rational aspect of decision-making
-and the sensibility side. Making decisions only with the rational mind will lead us to an
-individualistic and cold society. Albeit fair, living like this would not induce the synergy that
-advanced civilizations can bring, sharing and helping one another altruistically. Likewise, we
-cannot make decisions only by factoring in sensibility and neglecting the rational mind. This
-would ultimately lead to too much focus on feelings and less drive and accomplishment in
-society. Rationality is necessary in order for people to take a step back and look at situations
-objectively, making the best decision before considering who are all parties involved. There is
-no way to quantify how much of each decision-making method we should use (e.g., 60% of
-decisions should be rational and 40% should be sensible), but we must take a unique look at
-every situation in which we are involved. in order to maintain the highest ethical standing, it is
-necessary to weigh the outcomes of any decision and choose the path that leads to the most
-overall benefit. This benefit could be to the one making the decision or the greatest benefit to all
-parties involved; it is highly dependent on the situation and what opportunities all stakeholders
-had leading up to the decision itself. If people make all decisions considering both rationality
-and sensibility, we will live together in a more fair, just, successful, and ethically correct society.
+Yet, this website was not just to stand out as a model job candidate either. And why
+would it be? Upon creating this website, I had already accepted a job at one of the most
+prestigious accounting firms in the world, so job placement could not have been my main
+motivation. And please note, this website is certainly not to brag or boast either; I wince at every
+self-promoting article I choose to put on here. No, the reason for creating this is that I am now in
+the world of accounting, and I want to make a difference. That feeling, for me, will never go
+away. Every place I have been, every team I have participated in, every group, and every day, I
+strive to make changes – to improve what can be improved. So, when I said I am good at
+making friends, that was not to flex. I am trying to show that I can often make lasting, positive
+first impressions when I meet people in person (so, yes, I urge you to reserve all judgment until
+we meet face-to-face), and my hope is that by creating a website that showcases so many
+different sides of me, your first impression may be more positive than had you only seen me
+resume or LinkedIn. Maybe unique at the very least.
+
+As I progress from college and graduate school into the professional world, my
+dissatisfaction with complacency will only become more prevalent. I am aware of so many
+problems in the world of accounting, in the United States and worldwide, and I am willing to help
+in any way I can. I am always eager to get to know new people and to take on new risks and
+challenges. I built this website because I wanted to show that I am capable, adventurous, and
+willing to take action even in the face of judgment from peers. If I can be of assistance, please
+reach out; I would be elated to meet you.

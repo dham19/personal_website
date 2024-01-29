@@ -20,11 +20,11 @@ export default function About({ children }: { children: React.ReactNode }) {
           <div className="flex flex-col w-full p-2 md:p-0 md:w-2/3 md:mr-24">
             <h2 className="flex text-gray-700 mb-5 text-2xl">My Story</h2>
             {children}
-            <i>
+            {/* <i>
               Successful leadership is not about being tough or soft, sensitive
               or assertive, but about a set of attributes. First and foremost is
               character. --- John Wooden
-            </i>
+            </i> */}
           </div>
         </div>
       </div>

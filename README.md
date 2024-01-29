@@ -34,3 +34,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+FILES TO EDIT:
+
+My story (make sure there is a space between each paragraph): src/app/story.txt
+4 growing boxes: src/app/components/FlippingCard.tsx
+
+To change potos: Replace any of the photos with your own photo, and either make sure it's named exactly the same or go into the json in the code and rename the photo whatever.
