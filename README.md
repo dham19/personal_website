@@ -1,3 +1,6 @@
+To Make Change:
+Click file, on right click pencil to make edit. After edited, click green commit change.
+
 FILES TO EDIT TO MAKE A CHANGE:
 
 My story (make sure there is a space between each paragraph): src/app/story.txt
