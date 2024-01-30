@@ -1,13 +1,11 @@
 "use client";
 // TODO:
-// make expanded and contracted boxes dynamic widths, not fixed pixels
-// Work experience: if no bullets, make if statement in JSX to render it so title is to the right and centered
 
-import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { join } from "node:path/posix";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import data from "../data.json";
 
 export default function FlippingCard() {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -32,204 +30,13 @@ export default function FlippingCard() {
       height: "150px",
     },
   };
-  //   Upper content
-  //   WIll probably have to make a different data structure for each if theyre so different
-  const titles1 = ["Work Experience", "Education"];
-  const work_experience = [
-    // Job 1
-    [
-      ["/pwc.png"],
-      ["PwC"],
-      ["General Tax Intern"],
-      ["Charlotte, NC"],
-      ["Summer 2023"],
-      [
-        "Analyzed and updated client and internal files, enabling our team to confirm the accuracy of client financial statements through my quarterly reviews, year-to-date and AETR analyses, and quarterly tie-outs.",
-        "Created new networks with interns, associates, managers, and partners inside and outside my specific team, including ITP, Core tax, international tax, transfer pricing, and audit team members.",
-        "Analyzed and prepared final 2022 tax returns for multiple clients, including adjusting temporary and permanent book-tax differences.",
-        "Experimented and created robots with new technology such as UiPath, Alteryx, and PowerBI",
-      ],
-    ],
-    // Job 2...
-    [
-      ["/textron.png"],
-      ["Textron"],
-      ["M&A Tax Intern"],
-      ["Providence, RI"],
-      ["Summer 2022"],
-      [
-        "Worked at global headquarters on multiple projects, including LIFO calculation, reviewing CFC balance sheets to determine the potential for cash repatriation, and preparing statements for Textron’s federal returns.",
-        "Led nationwide team to first place at intern conference with a project on Bell APT 70 Government and commercial supply and demand analysis.",
-        "Engaged with senior leadership to explore personal goals, M&A, and tax law concepts",
-      ],
-    ],
-    [
-      ["/lulu.png"],
-      ["Lululemon"],
-      ["Educator"],
-      ["Clemson, SC"],
-      ["Fall 2023"],
-      [
-        "Ability to connect with customers in a meaningful way, creating a relatable desire to own our product",
-        "Consistently met or exceeded sales targets, including what the manager believes to be the most pairs of mens pants single-handedly sold in one day",
-        "Remain calm, relaxed, and adaptable in all situations",
-        "Speak clearly, communicate effectively, and always smile!",
-      ],
-    ],
-    [
-      ["bap.png"],
-      ["Beta Alpha Psi - National Honor Society"],
-      ["Chapter President"],
-      [""],
-      [],
-      ["Chapter earned Gold Status nationally"],
-    ],
-    [["spawn.png"], ["SPAWN"], ["Cohort 2 Fellow"], [""], [""], []],
 
-    [
-      ["/nps.png"],
-      ["National Park Service"],
-      ["Ocean Lifeguard"],
-      ["Sandy Hook, NJ"],
-      ["Summer 2021"],
-      [
-        "Worked at global headquarters on multiple projects, including LIFO calculation, reviewing CFC balance sheets to determine the potential for cash repatriation, and preparing statements for Textron’s federal returns.",
-        "Led nationwide team to first place at intern conference with a project on Bell APT 70 Government and commercial supply and demand analysis.",
-        "Engaged with senior leadership to explore personal goals, M&A, and tax law concepts",
-      ],
-    ],
-
-    [
-      ["/doordash.png"],
-      ["Doordash"],
-      ["Independent Contractor"],
-      ["Monmouth County, NJ"],
-      ["Intermittant 2018-2021"],
-      [],
-    ],
-    [
-      ["/abc.png"],
-      ["Atlantic Bagel Company"],
-      ["Fry Cook"],
-      ["Rumson, NJ"],
-      ["Summer 2020"],
-      [],
-    ],
-    [
-      ["vector.jpeg"],
-      ["Vector Marketing"],
-      ["Field Sales Representative"],
-      ["Eatontown, NJ"],
-      ["Apr 2018 - Aug 2018"],
-      [],
-    ],
-    [["/rcc.png"], ["Rumson Country Club"], ["Caddy"], ["Rumson, NJ"], [], []],
-    [
-      ["/country_club.png"],
-      ["Country Club Services"],
-      ["Valet Services"],
-      [""],
-      [],
-      [],
-    ],
-    [
-      ["/trll.png"],
-      ["Two River Little League"],
-      ["Umpire"],
-      ["Monmouth County, NJ"],
-      [],
-      [],
-    ],
-  ];
-  const education = [
-    [
-      ["clemson"],
-      ["clemson1.jpeg"],
-      ["Clemson University"],
-      ["Location", "major", "grad date"],
-      ["Business Strategy", "Advanced Analytics", "International Taxation"],
-      [""],
-      [
-        "D1 Cross Country/Track Athlete",
-        "Clemson Blockchain (Treasurer)",
-        "Beta Alpha Psi - Accounting and Finance Honor Society (Chapter President)",
-        "Club Wrestling",
-        "Flag Football",
-        "Softball",
-        "Rec Golf",
-      ],
-    ],
-    [
-      ["cba"],
-      ["cba1.jpeg"],
-      ["Christian Brothers Academy"],
-      ["basic stufff"],
-      ["AP Computer Science", "Calculus", "Principles of Engineering"],
-      ["Brotherhood."],
-      [
-        "Cross Country",
-        "Track",
-        "Space and Aviation Club",
-        "Trivia Club",
-        "Wrestling",
-        "participation in the longest winning streak in the history of sports (CBAXC - currently at 398 wins in a row and counting).",
-      ],
-    ],
-  ];
-
-  const titles2 = ["", "", "Awards & Accolades", "Skills & Hobbies"];
-
-  // name then description
-  const lower_content = [
-    [
-      ["Master of Accountancy", "Aug 2024"],
-      ["Bachelor of Science in Accounting", "May 2023"],
-      ["Alteryx Designer Core Certified", "Nov 2023"],
-      [
-        "Beta Alpha Psi - National Honor Society Chapter President",
-        "Fall 2021 - Spring 2023",
-      ],
-
-      [
-        "Clemson University Cryptocurrency Club - Investment Director & Treasurer",
-        "Spring 2022 - Spring 2023",
-      ],
-      [
-        "Clemson University President’s List, Dean’s List, and/or Honor Roll",
-        "Spring 2020 – Spring 2023",
-      ],
-      ["Clemson University Wrestling Club", "Fall 2021 – Spring 2023"],
-      [
-        "Clemson University - NCAA Division 1 Track and Field",
-        "Aug. 2019 - Spring 2021",
-      ],
-      ["ACC All-Academic Student-Athlete", "Spring 2020 - Spring 2021"],
-    ],
-    [
-      // Skills
-      [
-        "Microsoft Office (significant experience in all dimensions",
-        "Alteryx (Alteryx Certified)",
-        "PowerBI (significant experience",
-        "SQL (significant experience)",
-        "Python (basics)",
-        "UiPath (intermediate)",
-        "Public Speaking & Presenting (intermediate experience, passionate)",
-        "Tax Research (significant experience)",
-        "Business negotiations (basics)",
-        "I also view myself as a strong leader, problem solver, creative thinker, and active listener. My biggest weakness is that I eagerly take on tasks and rush to get things done - but I’m never afraid to accept my errors and go back to correct mistakes",
-      ],
-      // Hobbies
-      [
-        ["volunteer Work (10+ hours per year)", ""],
-        ["running, swimming, lifting, ball sports", ""],
-        ["investment analysis", ""],
-        ["reading", ""],
-        ["Blockchain", ""],
-        ["entrepreneurship", ""],
-      ],
-    ],
-  ];
+  const the_data = data;
+  const titles1 = data.titles1;
+  const work_experience = data.work_experience;
+  const education = data.education;
+  const titles2 = data.titles2;
+  const lower_content = data.lower_content;
 
   return (
     <div className="py-1 px-1 pb-[300px] background-container w-full bg-fixed">

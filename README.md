@@ -38,6 +38,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 FILES TO EDIT:
 
 My story (make sure there is a space between each paragraph): src/app/story.txt
-4 growing boxes: src/app/components/FlippingCard.tsx
+Most fields: src/app/data.json
 
-To change potos: Replace any of the photos with your own photo, and either make sure it's named exactly the same or go into the json in the code and rename the photo whatever.
+To change potos: public/ - Replace any of the photos in this folder with your own photo, and either make sure it's named exactly the same or go into the json and rename the photo whatever.
