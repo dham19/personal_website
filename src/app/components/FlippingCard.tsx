@@ -1,5 +1,6 @@
 "use client";
 // TODO:
+// make json items each have a seld identifiable field
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
@@ -140,19 +141,17 @@ export default function FlippingCard() {
                             {/* Header Information  */}
                             <div className="flex flex-col md:w-2/3 p-0 mt-2">
                               <div className="flex flex-row justify-between p-0 w-full italic">
-                                <p className="ml-10">
-                                  Bachelor of Science in Accounting
-                                </p>
-                                <p className="mr-10">Graduation May 2023</p>
+                                <p className="ml-10">{education[0][3][1]}</p>
+                                <p className="mr-10">{education[0][3][2]}</p>
                               </div>
                               <div className="flex flex-row justify-between w-full italic">
-                                <p className="ml-10">Master of Accountancy</p>
-                                <p className="mr-10">Graduation August 2024</p>
+                                <p className="ml-10">{education[0][3][0]}</p>
+                                <p className="mr-10">{education[0][3][3]}</p>
                               </div>
                             </div>
                             <div className="flex flex-col md:w-2/3 p-0 mt-10 border-b">
                               <div className="flex flex-row justify-between w-full">
-                                <p className="ml-10">Cumulative GPA: 3.7/4.0</p>
+                                <p className="ml-10">{education[0][3][4]}</p>
                               </div>
 
                               <p className="mx-2 my-4 md:my-0 md:ml-10 md:mr-10">
@@ -179,12 +178,7 @@ export default function FlippingCard() {
                                     <li key={k}>{c}</li>
                                   ))}
                                 </ul>
-                                <i>
-                                  * I also had the unique opportunity to take
-                                  legitimate college credits in Billiards, Golf,
-                                  and Shotgun shooting. I love learning new
-                                  skills but these had to be excluded
-                                </i>
+                                <i>{education[0][5]}</i>
                               </div>
                             </div>
 
@@ -195,14 +189,7 @@ export default function FlippingCard() {
                                   Biggest Lesson Learned:
                                 </h2>
                                 <p className="ml-10 mr-10 pl-6">
-                                  Being comfortable with yourself. Everyone has
-                                  their own unique set of skills, passions, and
-                                  attributes. You can always put on a facade,
-                                  and probably will get away with it, but deep
-                                  down you'll always be yourself. So, don't take
-                                  criticism or insults personally and continue
-                                  striving towards your own goals, treating
-                                  others with respect along the way.
+                                  {education[0][7]}
                                 </p>
                               </div>
                             </div>
@@ -264,18 +251,7 @@ export default function FlippingCard() {
                                   Biggest Lesson Learned:
                                 </h2>
                                 <p className="ml-10 mr-10 pl-6">
-                                  Hard work leads to success. I learned this
-                                  lesson late. However, after listening to
-                                  enough people successful in their respective
-                                  endeavors, I realized that those who have
-                                  succeeded might actually know what they’re
-                                  talking about. Sure, people have naive beliefs
-                                  and false perceptions about what led to their
-                                  success, but to think that discipline,
-                                  dedication, consistency, and perseverance
-                                  through trials and tribulations would do
-                                  anything but help you achieve your goals would
-                                  be a preposterous idea.
+                                  {education[1][5]}
                                 </p>
                               </div>
                             </div>
