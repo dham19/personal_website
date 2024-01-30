@@ -70,7 +70,7 @@
       ["Atlantic Bagel Company"],
       ["Fry Cook"],
       ["Rumson, NJ"],
-      ["Summer 2020"],
+      ["Summer 2019"],
       []
     ],
     [
@@ -86,17 +86,24 @@
       ["/country_club.png"],
       ["Country Club Services"],
       ["Valet Services"],
-      [""],
-      [],
-      []
+      ["Monmouth County, NJ"],
+      ["Summer 2019"],
+      [
+        "Be timely, orderly, and respectful to all clients"
+        "Consistently work Friday and Saturday evenings, even after working all day at the bagel shop"
+        "Drive all vehicles with heightened duty of care, remain alert and responsive at all times"
+        "Be prepared to work at all times. The company poorly planned and would often call valet staff in with only a few hours notice."
+      ]
     ],
     [
       ["/trll.png"],
       ["Two River Little League"],
       ["Umpire"],
       ["Monmouth County, NJ"],
-      [],
-      []
+      ["March - June in 2014-2019"],
+      [
+        "Being an umpire could be tedious and boring when the kids could not put the ball in the strike zone. However, it was one of my most satisfying jobs, watching kids work hard and succeed. The most challenging aspect was remaining unbiased and objective in all situations. Many plays were a fraction of a second difference between out and safe, strike and ball. I had to take a full second to replay the moment in my head, and then make a decisive call, loudly and clearly."
+      ]
     ]
   ],
   "education": [
