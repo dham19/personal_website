@@ -1,5 +1,5 @@
 {
-  "titles1": ["Work Experience", "Education"],
+  "titles1": ["Work Experience", "Education", "", ""],
   "titles2": ["", "", "Awards & Accolades", "Skills & Hobbies"],
   "work_experience": [
     [
@@ -47,18 +47,25 @@
       ["Clemson, SC"],
       ["Spring 2022 - Spring 2023"],
       [
-        "Chapter earned Gold Status nationally"
-        "Nearly doubled chapter size over the course of one year"
+        "Chapter earned Gold Status nationally",
+        "Nearly doubled chapter size over the course of one year",
         "Worked diligently to organize club meetings, Fortune 500 company presentations, and executive projects for chapter officers",
         "Started many new chapter projects and events after sharing ideas with chapter presidents at other Universities",
         "Traveled to Annual meeting in Orlando, FL and Mid-year meeting in Pittspurgh, PA to present chapter successes and receive recognition"
       ]
     ],
-    [["spawn.png"], ["SPAWN"], ["Cohort 2 Fellow"], ["Online Organization"], ["Summer 2022 - Spring 2023"], [
-      "Accepted in student fellowship for advancaed research on blockchain",
-      "Networked with some of the top minds in the Burgeoining field, including employees of Andreessen Horowitz (a16z), Binance, and Circle",
-      "Completed research paper on blockchain adaoption in India with students from Vanderbilt and Gonzaga"
-    ]],
+    [
+      ["spawn.png"],
+      ["SPAWN"],
+      ["Cohort 2 Fellow"],
+      ["Online Organization"],
+      ["Summer 2022 - Spring 2023"],
+      [
+        "Accepted in student fellowship for advancaed research on blockchain",
+        "Networked with some of the top minds in the Burgeoining field, including employees of Andreessen Horowitz (a16z), Binance, and Circle",
+        "Completed research paper on blockchain adaoption in India with students from Vanderbilt and Gonzaga"
+      ]
+    ],
     [
       ["/nps.png"],
       ["National Park Service"],
@@ -89,8 +96,7 @@
       ["Fry Cook"],
       ["Rumson, NJ"],
       ["Summer 2019"],
-      [
-      ]
+      []
     ],
     [
       ["vector.jpeg"],
