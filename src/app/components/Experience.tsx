@@ -7,11 +7,16 @@ export default function Experience({ data }: propsInterface) {
 
   return (
     <>
-      <h1 className='md:hidden'>Experience</h1>
+      <h1 className='md:hidden flex justify-center text-4xl mb-2'>
+        My Experience
+      </h1>
+      <p className='md:hidden flex justify-center border-b mb-4 pb-2'>
+        Here's where I've been so far
+      </p>
       {work_experience.map((item, i) => (
         <div
           key={i}
-          className='flex flex-col md:flex-row items-center gap-5 mb-10 ml-5 mr-5'>
+          className='flex flex-col md:flex-row items-center gap-5 mb-10 ml-5 mr-5 md:border-white md:bg-white'>
           <div className='flex-shrink-0 w-full md:max-w-[33.34%]'>
             <img
               className='object-contain'
