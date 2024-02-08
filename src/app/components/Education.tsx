@@ -37,14 +37,14 @@ export default function Education({ data }: propsInterface) {
             {education[0][6].map((e, j) => (
               <span key={j}>
                 {j > 0 && ', '}
-                {<i>{e}</i>}
+                {<i className='text-sm'>{e}</i>}
               </span>
             ))}
           </p>
         </div>
 
         {/* Favorite Classes Div  */}
-        <div className='flex flex-col md:flex-row w-full'>
+        <div className='flex flex-col md:flex-row w-full mb-2'>
           <div className='hidden md:flex md:w-1/4 ' />
           <div className='flex w-full p-2 md:p-0 md:w-1/2 flex-col'>
             <h2 className='text-gray-500'>Favorite Classes</h2>
@@ -53,7 +53,7 @@ export default function Education({ data }: propsInterface) {
                 <li key={k}>{c}</li>
               ))}
             </ul>
-            <i>{education[0][5]}</i>
+            <i className='text-sm'>{education[0][5]}</i>
           </div>
         </div>
 
@@ -92,7 +92,7 @@ export default function Education({ data }: propsInterface) {
               {education[1][6].map((e, l) => (
                 <span key={l}>
                   {l > 0 && ', '}
-                  {<i>{e}</i>}
+                  {<i className='text-sm'>{e}</i>}
                 </span>
               ))}
             </p>
