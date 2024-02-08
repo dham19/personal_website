@@ -7,9 +7,9 @@ export default function MobileAwards() {
   console.log('lower content', lower_content);
 
   return (
-    <>
+    <main>
       <Navbar />
       <Awards data={lower_content} />
-    </>
+    </main>
   );
 }

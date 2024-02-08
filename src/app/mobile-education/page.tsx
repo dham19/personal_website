@@ -6,9 +6,9 @@ export default function MobileEducation() {
   const education = data.education;
 
   return (
-    <>
+    <main>
       <Navbar />
       <Education data={education} />
-    </>
+    </main>
   );
 }

@@ -8,9 +8,9 @@ export default function MobileExperience() {
   const theData = data.work_experience;
 
   return (
-    <>
+    <main>
       <Navbar />
       <Experience data={theData} />
-    </>
+    </main>
   );
 }
