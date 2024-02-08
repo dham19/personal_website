@@ -7,6 +7,7 @@ export default function Experience({ data }: propsInterface) {
 
   return (
     <>
+      <h1 className='md:hidden'>Experience</h1>
       {work_experience.map((item, i) => (
         <div
           key={i}
