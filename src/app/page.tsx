@@ -8,7 +8,7 @@ import MobileSections from './components/MobileSections';
 
 export default function Home() {
   return (
-    <main>
+    <main className=''>
       <Navbar />
       <div className='hidden md:block'>
         <FlippingCard />
