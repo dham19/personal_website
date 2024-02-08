@@ -96,15 +96,21 @@
       ["Fry Cook"],
       ["Rumson, NJ"],
       ["Summer 2019"],
-      []
+      [
+        "Working at a deli in New Jersey was one of my favorite experiences. The unique characters you meet, the regulars, the banter, and best of all the food. It could be stressful when the line was out the door and there were only two workers and no fresh bagels, but often times the 3-4 people behind the counter worked in a cohesive unit and satsifed all customers. The job was something straight out of the Sopranos, only I didn't know it at the time."
+      ]
     ],
     [
       ["vector.jpeg"],
       ["Vector Marketing"],
       ["Field Sales Representative"],
       ["Eatontown, NJ"],
-      ["Apr 2018 - Aug 2018"],
-      []
+      ["Summer 2018"],
+      [
+        "Performed 1-on-1 professional sales presentations, negotiated prices, and maintained customer relationships and satisfactions",
+        "#2 Sales Rep in Monmouth County with over $29,000 in product sold (in less than 60 days)",
+        "Implemented marketing strategies and cold-calling in order to book demos and broaden customer base"
+      ]
     ],
     [["/rcc.png"], ["Rumson Country Club"], ["Caddy"], ["Rumson, NJ"], [], []],
     [
@@ -117,7 +123,7 @@
         "Be timely, orderly, and respectful to all clients",
         "Consistently work Friday and Saturday evenings, even after working all day at the bagel shop",
         "Drive all vehicles with heightened duty of care, remain alert and responsive at all times",
-        "Be prepared to work at all times. The company poorly planned and would often call valet staff in with only a few hours notice."
+        "Be prepared to work at all times. The company poorly planned and would often call valet staff in with only a few hours notice"
       ]
     ],
     [
@@ -143,7 +149,7 @@
         "Graduation Aug 2024",
         "Cumulative GPA: 3.7/4.0"
       ],
-      ["Business Strategy", "Advanced Analytics", "International Taxation"],
+      ["Business Strategy", "Advanced Analytics", "International Taxation", "Professional Selling - Conisistent B2B Sales Roleplays", "Global Business Negotiations - Class met 1x per week to practice business negotiations, culminating with a competition against professional negotiators in France."],
       [
         "* I also had the unique opportunity to take college credits in Billiards, Golf, and Shotgun Shooting. I love learning new skills but these had to be excluded."
       ],
@@ -157,7 +163,7 @@
         "Rec Golf"
       ],
       [
-        "Being comfortable with yourself. Everyone has their own unique set of skills, passions, and attributes. You can always put on a facade, and probably will get away with it, but deepdown you'll always be yourself. So, don't take criticism or insults personally and continue striving towards your own goals, treating others with respect along the way."
+        "Being comfortable with yourself. Everyone has their own unique set of skills, passions, and attributes. You can always put on a facade, and probably will get away with it, but deepdown you'll always be yourself. So, don't take criticism or insults personally and continue striving towards your own goals, fighting to achieve your own purpose and mission, treating others with respect along the way."
       ]
     ],
     [
@@ -175,7 +181,7 @@
         "Space and Aviation Club",
         "Trivia Club",
         "Wrestling",
-        "participation in the longest winning streak in the history of sports (CBAXC - currently at 398 wins in a row and counting)."
+        "participation in the longest winning streak in the history of sports (CBAXC - currently at 398 wins in a row and counting, win streak dating back to 1974)."
       ]
     ]
   ],
@@ -208,7 +214,7 @@
       [
         "Microsoft Office (significant experience in all dimensions)",
         "Alteryx (Alteryx Certified)",
-        "PowerBI (significant experience",
+        "PowerBI (significant experience)",
         "SQL (significant experience)",
         "Python (basics)",
         "UiPath (intermediate)",
