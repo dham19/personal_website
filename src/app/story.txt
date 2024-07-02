@@ -1,40 +1,4 @@
-Taking on a new challenge is always fun at the beginning. However, even with a project
-as simple as a personal website, challenges come with unforeseen events and obstacles. It
-becomes more difficult than originally expected. This website took me weeks to complete (and
-is even edited months later) when I originally sat down with a friend and expected to finish it in a
-few hours. We easily could have used a template, but the inherent personalization aspect of
-building it yourself, and learning Tailwind CSS for the first time was an opportunity we did not
-want to pass up. The beauty of this challenge is that I learned new tricks and skills, and more
-importantly, I was led to my true reason for building the site in the first place.
-
-Throughout my life, I have been exceptionally good at making friends. I get along well
-with strangers, colleagues, and classmates, and the friends I do make are often friends for life. It
-truly is a blessing. However, I was worried when I began applying for jobs. I realized that I would
-not have the opportunity to strike a connection with the interviewer if I never made it to the
-interview. I became frustrated when editing my resume because I wanted to add many more
-elements that would never fit onto one page. Building a website, I thought, would be an
-excellent and professional way to stand out as a candidate and would allow me to showcase all
-my accomplishments. Before completion, I realized I had far less professionally acceptable
-accolades than previously thought, but it was nice not to be limited to such a confined space.
-
-Yet, this website was not just to stand out as a model job candidate either. And why
-would it be? Upon creating this website, I had already accepted a job at one of the most
-prestigious accounting firms in the world, so job placement could not have been my main
-motivation. And please note, this website is certainly not to brag or boast either; I wince at every
-self-promoting article I choose to put on here. No, the reason for creating this is that I am now in
-the world of accounting, and I want to make a difference. That feeling, for me, will never go
-away. Every place I have been, every team I have participated in, every group, and every day, I
-strive to make changes – to improve what can be improved. So, when I said I am good at
-making friends, that was not to flex. I am trying to show that I can often make lasting, positive
-first impressions when I meet people in person (so, yes, I urge you to reserve all judgment until
-we meet face-to-face), and my hope is that by creating a website that showcases so many
-different sides of me, your first impression may be more positive than had you only seen me
-resume or LinkedIn. Maybe unique at the very least.
-
-As I progress from college and graduate school into the professional world, my
-dissatisfaction with complacency will only become more prevalent. I am aware of so many
-problems in the world of accounting, in the United States and worldwide, and I am willing to help
-in any way I can. I am always eager to get to know new people and to take on new risks and
-challenges. I built this website because I wanted to show that I am capable, adventurous, and
-willing to take action even in the face of judgment from peers. If I can be of assistance, please
-reach out; I would be elated to meet you.
+The website serves multiple purposes. Most importantly, creating it was a challenge I felt compelled to undertake. One of the most important life lessons is to listen to your heart. Like any challenge, this came with unexpected hiccups and unforeseen obstacles. This took me weeks to finish and is continuously edited, when I originally planned to complete it in a matter of hours. I easily could have used a template, but the inherent personalization aspect of building it yourself and learning Tailwind CSS for the first time was an opportunity I did not want to pass up.
+This website also serves as an extended resume. I always felt too confined in trying to sum up my entire life in a single page for a resume. Similarly, any natural charisma and personal connection are completely forfeited when using a resume. I hate being rejected for jobs before I even get to the interview. This website is no substitute for an in-person first impression, but I hope it makes me more than a number on a screen.
+I will also use this website as an outlet for helping other people, which has always been a passion of mine. Giving free happiness to others and learning new things while doing it brings one a special kind of satisfaction. I listed my largest skill sets in the Services section above, but if there is anything you want me to help with, or even if you just want to have a conversation, I am more than willing to join you. 
+I currently work a full-time role as an international tax consultant at a prestigious firm. I thoroughly enjoy my work, and I could not be happier with my employer. I have developed excellent time management skills after a lifetime of being a student-athlete, though, and I do not like to sit idle in my free time. If we sit and chat there is a chance it amounts to nothing, a chance we work together for a short period, and a chance that we create something special. If you have any questions or requests for me, don’t hesitate to fill out the form below. Thank you!
